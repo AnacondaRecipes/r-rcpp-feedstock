@@ -21,20 +21,20 @@ source:
 
 build:
   number: 0
-  skip: true  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
+    - {{ compiler('cxx') }}  # [not win]
     - r-base
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
+    - posix                  # [win]
+    - {{native}}toolchain    # [win]
 
   run:
     - r-base
+    - {{native}}gcc-libs     # [win]
 
 test:
   commands:
