@@ -10,8 +10,8 @@ package:
 source:
   fn: Rcpp_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/Rcpp_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/Rcpp/Rcpp_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Rcpp_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/Rcpp/Rcpp_{{ version }}.tar.gz
   sha256: da28fcfc3fe7c48d02f9f3e309b56f4be52b14a01216a23e3de8f9d6deeb7e63
 
 
