@@ -1,4 +1,4 @@
-{% set version = '0.12.18' %}
+{% set version = '0.12.19' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rcpp_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rcpp/Rcpp_{{ version }}.tar.gz
-  sha256: fcecd01e53cfcbcf58dec19842b7235a917b8d98988e4003cc090478c5bbd300
+  sha256: 63aeb6d4b58cd2899ded26f38a77d461397d5b0dc5936f187d3ca6cd958ab582
 
   patches:
     - 0001-Add-CXX1XSTD-to-PKG_CPPFLAGS.patch
@@ -82,8 +82,8 @@ extra:
 
 # Package: Rcpp
 # Title: Seamless R and C++ Integration
-# Version: 0.12.18
-# Date: 2018-07-21
+# Version: 0.12.19
+# Date: 2018-09-21
 # Author: Dirk Eddelbuettel, Romain Francois, JJ Allaire, Kevin Ushey, Qiang Kou, Nathan Russell, Douglas Bates and John Chambers
 # Maintainer: Dirk Eddelbuettel <edd@debian.org>
 # Description: The 'Rcpp' package provides R functions as well as C++ classes which offer a seamless integration of R and C++. Many R data types and objects can be mapped back and forth to C++ equivalents which facilitates both writing of new code as well as easier integration of third-party libraries. Documentation about 'Rcpp' is provided by several vignettes included in this package, via the 'Rcpp Gallery' site at <http://gallery.rcpp.org>, the paper by Eddelbuettel and Francois (2011, <doi:10.18637/jss.v040.i08>), the book by Eddelbuettel (2013, <doi:10.1007/978-1-4614-6868-4>) and the paper by Eddelbuettel and Balamuta (2018, <doi:10.1080/00031305.2017.1375990>); see 'citation("Rcpp")' for details.
@@ -97,9 +97,9 @@ extra:
 # MailingList: Please send questions and comments regarding Rcpp to rcpp-devel@lists.r-forge.r-project.org
 # RoxygenNote: 6.0.1
 # NeedsCompilation: yes
-# Packaged: 2018-07-21 21:40:37.784076 UTC; edd
+# Packaged: 2018-09-30 18:12:58.354107 UTC; edd
 # Repository: CRAN
-# Date/Publication: 2018-07-23 07:50:03 UTC
+# Date/Publication: 2018-10-01 06:39:15 UTC
 
 # See
 # http://docs.continuum.io/conda/build.html for
